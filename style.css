@@ -1,0 +1,75 @@
+*{
+  margin: 0;padding: 0;
+}
+.container div{
+    background-color: pink;
+    border: 4px solid black;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    color: whitesmoke;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);  
+    grid-template-rows: 10vh 10vh 10vh 20vh 10vh 20vh 20vh;
+    grid-template-areas: 
+    "b0 b0 b0"
+    "b1 b1 b2"
+    "b3 b4 b4"
+    "b5 b5 b6"
+    "b7 b8 b6"
+    "b9 b9 b9"
+    "b10 b10 b11"; 
+}
+.box0{
+    background-color: red;
+    grid-area: b0;
+    /* grid-column: span 3; */
+}
+.box1{
+    grid-area: b1;
+    /* grid-column: 1/3; */
+}
+.box2{
+    grid-area: b2;
+    /* grid-column: 3/4; */
+}
+.box3{
+    grid-area: b3;
+    /* grid-column: 1/2; */
+}
+.box4{
+    grid-area: b4;
+    /* grid-column: 2/4; */
+}
+.box5{
+    grid-area: b5;
+    /* grid-column: 1/3; */
+}
+.box6{
+    grid-area: b6;
+   grid-row: 4/6;
+    /* grid-column: span 2; */
+}
+.box7{
+    grid-area: b7;
+    /* grid-column: 1/2; */
+}
+.box8{
+    grid-area: b8;
+    /* grid-column: 2/4; */
+}
+.box9{
+    grid-area: b9;
+    /* grid-column: span 3; */
+}
+.box10{
+    grid-area: b10;
+    /* grid-column: span 2; */
+}
+.box11{
+    grid-area: b11;
+    /* grid-column: span 2; */
+}
